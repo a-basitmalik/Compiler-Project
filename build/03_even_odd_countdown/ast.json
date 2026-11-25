@@ -1,0 +1,163 @@
+{
+  "format": "citu-ast-v1",
+  "source": "03_even_odd_countdown.citu",
+  "root": {
+    "kind": "Program",
+    "line": 1,
+    "column": 1,
+    "body": {
+      "kind": "Block",
+      "line": 2,
+      "column": 1,
+      "scope_id": "SC001",
+      "statements": [
+        {
+          "kind": "VarDecl",
+          "line": 3,
+          "column": 5,
+          "datatype": "int",
+          "name": "number"
+        },
+        {
+          "kind": "Input",
+          "line": 4,
+          "column": 5,
+          "name": "number"
+        },
+        {
+          "kind": "While",
+          "line": 6,
+          "column": 5,
+          "condition": {
+            "kind": "Binary",
+            "line": 6,
+            "column": 21,
+            "op": ">",
+            "left": {
+              "kind": "Variable",
+              "line": 6,
+              "column": 14,
+              "name": "number"
+            },
+            "right": {
+              "kind": "IntLiteral",
+              "line": 6,
+              "column": 23,
+              "value": 0
+            }
+          },
+          "body": {
+            "kind": "Block",
+            "line": 7,
+            "column": 5,
+            "scope_id": "SC002",
+            "statements": [
+              {
+                "kind": "If",
+                "line": 8,
+                "column": 9,
+                "condition": {
+                  "kind": "Binary",
+                  "line": 8,
+                  "column": 26,
+                  "op": "==",
+                  "left": {
+                    "kind": "Binary",
+                    "line": 8,
+                    "column": 22,
+                    "op": "%",
+                    "left": {
+                      "kind": "Variable",
+                      "line": 8,
+                      "column": 15,
+                      "name": "number"
+                    },
+                    "right": {
+                      "kind": "IntLiteral",
+                      "line": 8,
+                      "column": 24,
+                      "value": 2
+                    }
+                  },
+                  "right": {
+                    "kind": "IntLiteral",
+                    "line": 8,
+                    "column": 29,
+                    "value": 0
+                  }
+                },
+                "then": {
+                  "kind": "Block",
+                  "line": 9,
+                  "column": 9,
+                  "scope_id": "SC003",
+                  "statements": [
+                    {
+                      "kind": "Print",
+                      "line": 10,
+                      "column": 13,
+                      "value": {
+                        "kind": "StringLiteral",
+                        "line": 10,
+                        "column": 19,
+                        "value": "Even"
+                      }
+                    }
+                  ]
+                },
+                "otherwise": {
+                  "kind": "Block",
+                  "line": 13,
+                  "column": 9,
+                  "scope_id": "SC004",
+                  "statements": [
+                    {
+                      "kind": "Print",
+                      "line": 14,
+                      "column": 13,
+                      "value": {
+                        "kind": "StringLiteral",
+                        "line": 14,
+                        "column": 19,
+                        "value": "Odd"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "kind": "Print",
+                "line": 16,
+                "column": 9,
+                "value": {
+                  "kind": "Variable",
+                  "line": 16,
+                  "column": 15,
+                  "name": "number"
+                }
+              },
+              {
+                "kind": "Update",
+                "line": 17,
+                "column": 9,
+                "name": "number",
+                "op": "--"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "Print",
+          "line": 20,
+          "column": 5,
+          "value": {
+            "kind": "StringLiteral",
+            "line": 20,
+            "column": 11,
+            "value": "Finished"
+          }
+        }
+      ]
+    }
+  }
+}

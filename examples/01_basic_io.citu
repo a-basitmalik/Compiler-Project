@@ -1,0 +1,13 @@
+main()
+{
+    int age;
+    int marks;
+
+    input(age);
+    input(marks);
+
+    print("Age:");
+    print(age);
+    print("Marks:");
+    print(marks);
+}

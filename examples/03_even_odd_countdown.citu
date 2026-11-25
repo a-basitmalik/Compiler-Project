@@ -1,0 +1,21 @@
+main()
+{
+    int number;
+    input(number);
+
+    jab tak (number > 0)
+    {
+        agar (number % 2 == 0)
+        {
+            print("Even");
+        }
+        magar
+        {
+            print("Odd");
+        }
+        print(number);
+        number--;
+    }
+
+    print("Finished");
+}

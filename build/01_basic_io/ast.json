@@ -1,0 +1,87 @@
+{
+  "format": "citu-ast-v1",
+  "source": "01_basic_io.citu",
+  "root": {
+    "kind": "Program",
+    "line": 1,
+    "column": 1,
+    "body": {
+      "kind": "Block",
+      "line": 2,
+      "column": 1,
+      "scope_id": "SC001",
+      "statements": [
+        {
+          "kind": "VarDecl",
+          "line": 3,
+          "column": 5,
+          "datatype": "int",
+          "name": "age"
+        },
+        {
+          "kind": "VarDecl",
+          "line": 4,
+          "column": 5,
+          "datatype": "int",
+          "name": "marks"
+        },
+        {
+          "kind": "Input",
+          "line": 6,
+          "column": 5,
+          "name": "age"
+        },
+        {
+          "kind": "Input",
+          "line": 7,
+          "column": 5,
+          "name": "marks"
+        },
+        {
+          "kind": "Print",
+          "line": 9,
+          "column": 5,
+          "value": {
+            "kind": "StringLiteral",
+            "line": 9,
+            "column": 11,
+            "value": "Age:"
+          }
+        },
+        {
+          "kind": "Print",
+          "line": 10,
+          "column": 5,
+          "value": {
+            "kind": "Variable",
+            "line": 10,
+            "column": 11,
+            "name": "age"
+          }
+        },
+        {
+          "kind": "Print",
+          "line": 11,
+          "column": 5,
+          "value": {
+            "kind": "StringLiteral",
+            "line": 11,
+            "column": 11,
+            "value": "Marks:"
+          }
+        },
+        {
+          "kind": "Print",
+          "line": 12,
+          "column": 5,
+          "value": {
+            "kind": "Variable",
+            "line": 12,
+            "column": 11,
+            "name": "marks"
+          }
+        }
+      ]
+    }
+  }
+}

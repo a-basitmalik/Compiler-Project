@@ -1,0 +1,17 @@
+main()
+{
+    int age;
+    bool permission;
+
+    input(age);
+    input(permission);
+
+    agar (age >= 18 && permission == true)
+    {
+        print("Eligible");
+    }
+    magar
+    {
+        print("Not eligible");
+    }
+}
