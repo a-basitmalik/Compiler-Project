@@ -1,0 +1,45 @@
+{
+  "format": "citu-symbols-v1",
+  "source": "02_eligibility.citu",
+  "scopes": [
+    {
+      "scope_id": "SC001",
+      "parent": null,
+      "depth": 0
+    },
+    {
+      "scope_id": "SC002",
+      "parent": "SC001",
+      "depth": 1
+    },
+    {
+      "scope_id": "SC003",
+      "parent": "SC001",
+      "depth": 1
+    }
+  ],
+  "symbols": [
+    {
+      "symbol_id": "SY001",
+      "name": "age",
+      "datatype": "int",
+      "scope_id": "SC001",
+      "declared_at": {
+        "line": 3,
+        "column": 5
+      },
+      "uses": 2
+    },
+    {
+      "symbol_id": "SY002",
+      "name": "permission",
+      "datatype": "bool",
+      "scope_id": "SC001",
+      "declared_at": {
+        "line": 4,
+        "column": 5
+      },
+      "uses": 2
+    }
+  ]
+}

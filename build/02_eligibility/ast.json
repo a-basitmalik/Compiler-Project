@@ -16,26 +16,30 @@
           "line": 3,
           "column": 5,
           "datatype": "int",
-          "name": "age"
+          "name": "age",
+          "symbol_id": "SY001"
         },
         {
           "kind": "VarDecl",
           "line": 4,
           "column": 5,
           "datatype": "bool",
-          "name": "permission"
+          "name": "permission",
+          "symbol_id": "SY002"
         },
         {
           "kind": "Input",
           "line": 6,
           "column": 5,
-          "name": "age"
+          "name": "age",
+          "symbol_id": "SY001"
         },
         {
           "kind": "Input",
           "line": 7,
           "column": 5,
-          "name": "permission"
+          "name": "permission",
+          "symbol_id": "SY002"
         },
         {
           "kind": "If",
@@ -55,14 +59,18 @@
                 "kind": "Variable",
                 "line": 9,
                 "column": 11,
-                "name": "age"
+                "name": "age",
+                "symbol_id": "SY001",
+                "datatype": "int"
               },
               "right": {
                 "kind": "IntLiteral",
                 "line": 9,
                 "column": 18,
-                "value": 18
-              }
+                "value": 18,
+                "datatype": "int"
+              },
+              "datatype": "bool"
             },
             "right": {
               "kind": "Binary",
@@ -73,15 +81,20 @@
                 "kind": "Variable",
                 "line": 9,
                 "column": 24,
-                "name": "permission"
+                "name": "permission",
+                "symbol_id": "SY002",
+                "datatype": "bool"
               },
               "right": {
                 "kind": "BoolLiteral",
                 "line": 9,
                 "column": 38,
-                "value": true
-              }
-            }
+                "value": true,
+                "datatype": "bool"
+              },
+              "datatype": "bool"
+            },
+            "datatype": "bool"
           },
           "then": {
             "kind": "Block",
@@ -97,7 +110,8 @@
                   "kind": "StringLiteral",
                   "line": 11,
                   "column": 15,
-                  "value": "Eligible"
+                  "value": "Eligible",
+                  "datatype": "string"
                 }
               }
             ]
@@ -116,7 +130,8 @@
                   "kind": "StringLiteral",
                   "line": 15,
                   "column": 15,
-                  "value": "Not eligible"
+                  "value": "Not eligible",
+                  "datatype": "string"
                 }
               }
             ]

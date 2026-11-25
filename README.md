@@ -28,3 +28,26 @@ Output goes to `build/<program>/`: `tokens.json` (`citu-tokens-v1`) and `ast.jso
 | `src/citu.py` | Command-line runner that writes JSON output |
 | `examples/` | The three Phase 1 example programs |
 | `tests/test_phase2.py` | Lexer, parser and CLI tests |
+
+## Phase 3 - Semantic Analyzer
+
+`src/semantic.py` walks the AST and checks the rules the grammar cannot: variables are
+declared before use and only once per block, inner blocks may hide outer names,
+`agar` / `jab tak` conditions are `bool`, `++` / `--` need an `int`, operators get operands of
+the right type, and dividing by the constant 0 is an error.
+
+```
+python3 src/citu.py examples/04_scopes.citu
+python3 src/citu.py tests/semantic_errors/bool_update.citu
+python3 src/citu.py examples/02_eligibility.citu --parse-only
+```
+
+A successful run now also writes `symbols.json` (`citu-symbols-v1`), and `ast.json` carries
+each expression's `datatype` and each variable's `symbol_id`.
+
+| File | Purpose |
+|------|---------|
+| `src/semantic.py` | Scope stack, symbol table and type checks |
+| `examples/04_scopes.citu` | Nested blocks and a hidden (shadowed) variable |
+| `tests/semantic_errors/` | Six programs that must fail the semantic stage |
+| `tests/test_phase3.py` | Semantic analyzer, symbol table and CLI tests |

@@ -1,0 +1,9 @@
+main()
+{
+    int number;
+    input(number);
+    agar (number)
+    {
+        print("yes");
+    }
+}

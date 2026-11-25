@@ -1,0 +1,25 @@
+// Phase 3 example: the same name in an inner block is a new variable.
+main()
+{
+    int count;
+    bool ready;
+
+    input(count);
+    input(ready);
+
+    agar (ready && count > 0)
+    {
+        bool count;          // hides the outer int count inside this block
+        input(count);
+        agar (!count)
+        {
+            print("Inner count is false");
+        }
+    }
+
+    jab tak (count >= 1)
+    {
+        print(count * 10);   // the outer int count again
+        count--;
+    }
+}

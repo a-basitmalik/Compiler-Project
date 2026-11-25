@@ -1,0 +1,39 @@
+{
+  "format": "citu-symbols-v1",
+  "source": "03_even_odd_countdown.citu",
+  "scopes": [
+    {
+      "scope_id": "SC001",
+      "parent": null,
+      "depth": 0
+    },
+    {
+      "scope_id": "SC002",
+      "parent": "SC001",
+      "depth": 1
+    },
+    {
+      "scope_id": "SC003",
+      "parent": "SC002",
+      "depth": 2
+    },
+    {
+      "scope_id": "SC004",
+      "parent": "SC002",
+      "depth": 2
+    }
+  ],
+  "symbols": [
+    {
+      "symbol_id": "SY001",
+      "name": "number",
+      "datatype": "int",
+      "scope_id": "SC001",
+      "declared_at": {
+        "line": 3,
+        "column": 5
+      },
+      "uses": 5
+    }
+  ]
+}

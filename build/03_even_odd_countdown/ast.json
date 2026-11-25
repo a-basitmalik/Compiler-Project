@@ -16,13 +16,15 @@
           "line": 3,
           "column": 5,
           "datatype": "int",
-          "name": "number"
+          "name": "number",
+          "symbol_id": "SY001"
         },
         {
           "kind": "Input",
           "line": 4,
           "column": 5,
-          "name": "number"
+          "name": "number",
+          "symbol_id": "SY001"
         },
         {
           "kind": "While",
@@ -37,14 +39,18 @@
               "kind": "Variable",
               "line": 6,
               "column": 14,
-              "name": "number"
+              "name": "number",
+              "symbol_id": "SY001",
+              "datatype": "int"
             },
             "right": {
               "kind": "IntLiteral",
               "line": 6,
               "column": 23,
-              "value": 0
-            }
+              "value": 0,
+              "datatype": "int"
+            },
+            "datatype": "bool"
           },
           "body": {
             "kind": "Block",
@@ -70,21 +76,27 @@
                       "kind": "Variable",
                       "line": 8,
                       "column": 15,
-                      "name": "number"
+                      "name": "number",
+                      "symbol_id": "SY001",
+                      "datatype": "int"
                     },
                     "right": {
                       "kind": "IntLiteral",
                       "line": 8,
                       "column": 24,
-                      "value": 2
-                    }
+                      "value": 2,
+                      "datatype": "int"
+                    },
+                    "datatype": "int"
                   },
                   "right": {
                     "kind": "IntLiteral",
                     "line": 8,
                     "column": 29,
-                    "value": 0
-                  }
+                    "value": 0,
+                    "datatype": "int"
+                  },
+                  "datatype": "bool"
                 },
                 "then": {
                   "kind": "Block",
@@ -100,7 +112,8 @@
                         "kind": "StringLiteral",
                         "line": 10,
                         "column": 19,
-                        "value": "Even"
+                        "value": "Even",
+                        "datatype": "string"
                       }
                     }
                   ]
@@ -119,7 +132,8 @@
                         "kind": "StringLiteral",
                         "line": 14,
                         "column": 19,
-                        "value": "Odd"
+                        "value": "Odd",
+                        "datatype": "string"
                       }
                     }
                   ]
@@ -133,7 +147,9 @@
                   "kind": "Variable",
                   "line": 16,
                   "column": 15,
-                  "name": "number"
+                  "name": "number",
+                  "symbol_id": "SY001",
+                  "datatype": "int"
                 }
               },
               {
@@ -141,7 +157,8 @@
                 "line": 17,
                 "column": 9,
                 "name": "number",
-                "op": "--"
+                "op": "--",
+                "symbol_id": "SY001"
               }
             ]
           }
@@ -154,7 +171,8 @@
             "kind": "StringLiteral",
             "line": 20,
             "column": 11,
-            "value": "Finished"
+            "value": "Finished",
+            "datatype": "string"
           }
         }
       ]

@@ -1,0 +1,61 @@
+{
+  "format": "citu-symbols-v1",
+  "source": "04_scopes.citu",
+  "scopes": [
+    {
+      "scope_id": "SC001",
+      "parent": null,
+      "depth": 0
+    },
+    {
+      "scope_id": "SC002",
+      "parent": "SC001",
+      "depth": 1
+    },
+    {
+      "scope_id": "SC003",
+      "parent": "SC002",
+      "depth": 2
+    },
+    {
+      "scope_id": "SC004",
+      "parent": "SC001",
+      "depth": 1
+    }
+  ],
+  "symbols": [
+    {
+      "symbol_id": "SY001",
+      "name": "count",
+      "datatype": "int",
+      "scope_id": "SC001",
+      "declared_at": {
+        "line": 4,
+        "column": 5
+      },
+      "uses": 5
+    },
+    {
+      "symbol_id": "SY002",
+      "name": "ready",
+      "datatype": "bool",
+      "scope_id": "SC001",
+      "declared_at": {
+        "line": 5,
+        "column": 5
+      },
+      "uses": 2
+    },
+    {
+      "symbol_id": "SY003",
+      "name": "count",
+      "datatype": "bool",
+      "scope_id": "SC002",
+      "declared_at": {
+        "line": 12,
+        "column": 9
+      },
+      "uses": 2
+    }
+  ]
+}
